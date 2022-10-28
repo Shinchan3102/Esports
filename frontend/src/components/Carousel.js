@@ -16,7 +16,7 @@ function Carousel() {
             <div className="carousel-inner carouselCss">
                 <div className="carousel-item active">
                     <img src={bg1} className="d-block vw-100 mx-auto opacity-0.5" style={{opacity:'0.6'}} alt="bg1"/>
-                        <div className="carousel-caption position-absolute top-0 vh-100 d-flex align-items-center justify-content-center">
+                        <div className="carousel-caption position-absolute top-0 h-100 d-flex align-items-center justify-content-center">
                             <div>
                             <h1 style={{fontSize:'60px',textShadow:'2px 2px 5px black'}}>JOIN US NOW</h1>
                             </div>
@@ -43,7 +43,7 @@ function Carousel() {
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style={{zIndex:'0'}}>
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>

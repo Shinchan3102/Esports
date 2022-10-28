@@ -1,5 +1,5 @@
-body{
-     background-image: linear-gradient(to right, #ba1c1c, #da7a0d)
+*{
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -26,11 +26,10 @@ a{
     background-color: rgba(0, 0, 0, 0.329);
 }
 .head{
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 400;
 }
 .noticeCss{
-    margin-top: 60px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -44,7 +43,7 @@ a{
 .noticeCss ul{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     margin-top: 40px;
     padding-left: 40px;
 }
@@ -53,7 +52,6 @@ a{
     font-size: 20px;
 }
 .aboutCss{
-    margin-top: 60px;
     color: white;
     padding: 90px 30px;
     border: 2px solid black;
@@ -71,20 +69,22 @@ a{
 .aboutCss div h1{
     width: fit-content;
 }
+.aboutCss img{
+    width: 400px;
+}
 .team{
-    margin-top: 60px;
-    width: 100vw;
     color: white;
     text-align: center;
     justify-content: space-evenly;
 }
 .new{
-    width: 32%;
+    width: 350px;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 20px;
 }
 .team_inside{
-    background-color: rgba(0, 0, 0, 0.301);
+    background-color: rgba(0, 0, 0, 0.371);
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -98,11 +98,57 @@ a{
     font-size: 20px;
     font-weight: 500;
     transition: 0.5s;
-    /* background-image: linear-gradient(45deg,red,orange); */
 }
 .team_inside a:hover{
-    
+    background-color: rgba(255, 255, 255, 0.379);
     color: white;
 }
 
+.infoCss div{
+    flex-direction: row;
+}
+.infoCss img{
+    width: 400px;
+}
 
+.statement1,.statement2{
+    width: 50%;
+}
+.statement1{
+    border-right: 1px solid white;
+}
+
+.form div{
+    width: 70%;
+    margin: auto;
+}
+
+@media screen and (max-width:500px) {
+    .navAnchorStyle{
+        font-size: 20px;
+    }
+    .head{
+        font-size: 25px;
+    }
+    .aboutCss img{
+        width: 300px;
+    }
+    .infoCss img{
+        width: 300px;
+    }
+    .statement,.statement2{
+        width:300px;
+        text-align: center;
+        margin: 10px auto;
+        padding:0px;
+        border: 0px;
+    }
+    .navD{
+        padding: 20px;
+        padding-right: 0px;
+        background-color: black;
+        width: 70%;
+        border-radius: 5px;
+
+    }
+}
